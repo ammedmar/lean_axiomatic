@@ -8,6 +8,9 @@ packagesDir = "../.lean-packages"
 autoImplicit = false
 # Mathlib's standard style linters (naming, documentation, formatting)
 weak.linter.mathlibStandardSet = true
+# The header linter requires Mathlib's Apache-2.0 copyright block; the licence
+# is not yet chosen, so it is disabled until then.
+weak.linter.style.header = false
 
 [[require]]
 name = "mathlib"
