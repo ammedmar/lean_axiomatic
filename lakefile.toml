@@ -1,6 +1,8 @@
 name = "lean_axiomatic"
 version = "0.1.0"
 defaultTargets = ["LeanAxiomatic"]
+# Shared dependency folder for all projects in lean/ (one Mathlib pin for all)
+packagesDir = "../.lean-packages"
 
 [leanOptions]
 autoImplicit = false

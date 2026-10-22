@@ -17,3 +17,10 @@ lake build
 ```
 
 Lean and mathlib are both pinned to version 4.34.1 (see `lean-toolchain` and `lakefile.toml`).
+
+Dependencies (mathlib and its own dependencies) are not stored in this
+project. They live in the shared folder `../.lean-packages`, set by
+`packagesDir` in `lakefile.toml`, and are used by every Lean project in
+the parent `lean/` folder. All those projects must therefore use the same
+mathlib version, and should be upgraded together. A project that needs a
+different version should be given its own `packagesDir`.
