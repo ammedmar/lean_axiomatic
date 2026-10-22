@@ -1,0 +1,5 @@
+# Lean build output and downloaded dependencies
+.lake/
+
+# macOS
+.DS_Store
