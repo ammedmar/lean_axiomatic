@@ -24,3 +24,6 @@ project. They live in the shared folder `../.lean-packages`, set by
 the parent `lean/` folder. All those projects must therefore use the same
 mathlib version, and should be upgraded together. A project that needs a
 different version should be given its own `packagesDir`.
+
+-
+Parts of this project were developed with the assistance of Claude and ChatGPT.
