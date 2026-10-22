@@ -3,3 +3,6 @@
 
 # macOS
 .DS_Store
+
+# The paper is a separate, independently versioned project
+paper/
