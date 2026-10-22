@@ -26,4 +26,23 @@ mathlib version, and should be upgraded together. A project that needs a
 different version should be given its own `packagesDir`.
 
 -
+
+## Paper version
+
+The formalization follows the manuscript *An axiomatic characterization of
+Steenrod's cup-i products* at commit `d35c41b` ("Sent to PEMS", tag
+`arXiv6`) of its own repository. References to sections, lemmas, and
+equations in this project are to that version. Update this line, and the
+references, whenever a later version is adopted.
+
+## Proof policy
+
+- Every completed theorem is checked with `#print axioms`; it may depend only
+  on Lean's standard axioms (`propext`, `Classical.choice`, `Quot.sound`).
+- `native_decide` is not used: it trusts the compiler rather than Lean's
+  kernel.
+- `sorry` is allowed during development only for statements listed as open in
+  the progress ledger. Before a milestone is declared complete, the build
+  must pass with no warnings.
+
 Parts of this project were developed with the assistance of Claude and ChatGPT.

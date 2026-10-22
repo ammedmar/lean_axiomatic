@@ -6,6 +6,8 @@ packagesDir = "../.lean-packages"
 
 [leanOptions]
 autoImplicit = false
+# Mathlib's standard style linters (naming, documentation, formatting)
+weak.linter.mathlibStandardSet = true
 
 [[require]]
 name = "mathlib"
